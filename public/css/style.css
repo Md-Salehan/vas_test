@@ -1,0 +1,66 @@
+.p-list{
+  display: flex;
+}
+
+.display-list{
+  width: 100%;
+  height: fit-content;
+  max-height: 200px;
+  background-color: white;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: none;
+}
+.display-list p {
+  padding: 5px 10px;
+  margin: 0;
+}
+.display-list hr {
+  padding: 0;
+  margin: 0;
+}
+
+.p-option:hover{
+  background-color: lightgrey;
+}
+
+.testing-table{
+  width: 90% !important;
+}
+
+.tabletop{
+  margin-top: 20px;
+}
+
+.spinner{
+  background-color: white !important;
+}
+
+.view-file{
+  width: 100% !important;
+  height: 75vh !important;
+  margin-top: 5vh !important;
+}
+.pd-15{
+  padding: 15px !important;
+}
+
+.tr-curve{
+  border-radius: 0 50px 0 0 !important;
+}
+
+.vist-msg{
+  color: red;
+}
+
+.imp-msg{
+  color: red;
+}
+
+.file-div{
+  display: flex;
+  align-items: center;
+}
+
