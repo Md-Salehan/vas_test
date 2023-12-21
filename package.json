@@ -1,7 +1,6 @@
 {
   "name": "verticalmenu-icon-sidebar",
   "version": "0.1.0",
-  "homepage": "https://ui.wbphed.gov.in/vas",
   "private": true,
   "dependencies": {
     "@coreui/react": "^4.1.2",

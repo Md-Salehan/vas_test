@@ -34,7 +34,7 @@ const ProductRequest = React.lazy(() =>
   import("./vrspages/ProductRequest/ProductRequest")
 );
 const EditPage = React.lazy(() => import("./vrspages/EditPage/EditPage"));
-        //depermental pages
+//depermental pages
 const NewProduct = React.lazy(() => import("./vrspages/DepermentalPages/newProduct/NewProduct"));
 const Minutes = React.lazy(() => import("./vrspages/DepermentalPages/minutes/Minutes"));
 const AllApplication = React.lazy(() => import("./vrspages/DepermentalPages/allApplication/AllApplication"));
@@ -42,7 +42,7 @@ const AllApplication = React.lazy(() => import("./vrspages/DepermentalPages/allA
 const AddUser = React.lazy(() => import("./vrspages/DepermentalPages/admin/addUser/AddUser"));
 const DeleteUser = React.lazy(() => import("./vrspages/DepermentalPages/admin/deleteUser/DeleteUser"));
 const EditUser = React.lazy(() => import("./vrspages/DepermentalPages/admin/editUser/EditUser"));
-const Periods= React.lazy(() => import("./vrspages/DepermentalPages/admin/periods/Periods"));
+const Periods = React.lazy(() => import("./vrspages/DepermentalPages/admin/periods/Periods"));
 const Products = React.lazy(() => import("./vrspages/DepermentalPages/admin/products/Products"));
 const ApproveProduct = React.lazy(() => import("./vrspages/DepermentalPages/newProduct/approveProduct/ApproveProduct"));
 const ViewApplication = React.lazy(() => import("./vrspages/DepermentalPages/viewApplication/ViewApplication"));
@@ -121,7 +121,7 @@ const Root = () => {
                   </Private>
                 }
               />
- <Route path={`${process.env.PUBLIC_URL}/DepartmentalDashboard`} element={<DepartmentalDashboard />} />
+              <Route path={`${process.env.PUBLIC_URL}/DepartmentalDashboard`} element={<DepartmentalDashboard />} />
               <Route
                 path={`${process.env.PUBLIC_URL}/NewApplication`}
                 element={
@@ -165,54 +165,54 @@ const Root = () => {
                 }
               />
 
-<Route path={`${process.env.PUBLIC_URL}/newProduct`} element={<NewProduct />} />
-<Route path={`${process.env.PUBLIC_URL}/minutes`} element={<Minutes />} />
-<Route path={`${process.env.PUBLIC_URL}/allApplication`} element={<AllApplication />} />
-<Route path={`${process.env.PUBLIC_URL}/admin/addUser`} element={<AddUser />} />
-          <Route path = {`${process.env.PUBLIC_URL}/admin/editUser`} element={<EditUser />} />
-          <Route path = {`${process.env.PUBLIC_URL}/admin/deleteUser`} element={<DeleteUser />} />
-          <Route path = {`${process.env.PUBLIC_URL}/productApprroval/REQ/:year/:num`} element={<ApproveProduct />} />
-          <Route path = {`${process.env.PUBLIC_URL}/viewApplication/APP/:year/:num`} element={<ViewApplication />} />
-          
+              <Route path={`${process.env.PUBLIC_URL}/newProduct`} element={<NewProduct />} />
+              <Route path={`${process.env.PUBLIC_URL}/minutes`} element={<Minutes />} />
+              <Route path={`${process.env.PUBLIC_URL}/allApplication`} element={<AllApplication />} />
+              <Route path={`${process.env.PUBLIC_URL}/admin/addUser`} element={<AddUser />} />
+              <Route path={`${process.env.PUBLIC_URL}/admin/editUser`} element={<EditUser />} />
+              <Route path={`${process.env.PUBLIC_URL}/admin/deleteUser`} element={<DeleteUser />} />
+              <Route path={`${process.env.PUBLIC_URL}/productApprroval/REQ/:year/:num`} element={<ApproveProduct />} />
+              <Route path={`${process.env.PUBLIC_URL}/viewApplication/APP/:year/:num`} element={<ViewApplication />} />
 
-          <Route path = {`${process.env.PUBLIC_URL}/admin/periods`} element={<Periods />} />
-          <Route path ={`${process.env.PUBLIC_URL}/admin/products`} element = {<Products />} />
-          <Route path ={`${process.env.PUBLIC_URL}/viewfile/:file`} element = {<ViewFile />} />
-          <Route path ={`${process.env.PUBLIC_URL}/VendorApplication/APP/:year/:num`} element = {<VendorApplication />} />
-             
-             
-         
-            
-              
-             
-             
-              
+
+              <Route path={`${process.env.PUBLIC_URL}/admin/periods`} element={<Periods />} />
+              <Route path={`${process.env.PUBLIC_URL}/admin/products`} element={<Products />} />
+              <Route path={`${process.env.PUBLIC_URL}/viewfile/:file`} element={<ViewFile />} />
+              <Route path={`${process.env.PUBLIC_URL}/VendorApplication/APP/:year/:num`} element={<VendorApplication />} />
+
+
+
+
+
+
+
+
             </Route>
-           {/*  <Route
+            {/*  <Route
               path={`${process.env.PUBLIC_URL}/pages/themeStyle`}
               element = {<Switcherlayout />}
             /> */}
             <Route
               path={`${process.env.PUBLIC_URL}/`}
-              element = {<Custompages />}
+              element={<Custompages />}
             >
-             
+
               <Route index element={<Login />} />
               <Route
-                path = {`${process.env.PUBLIC_URL}/custompages/login`}
-                element = {<Login />}
+                path={`${process.env.PUBLIC_URL}/custompages/login`}
+                element={<Login />}
               />
               <Route
                 path={`${process.env.PUBLIC_URL}/custompages/register`}
-                element = {<Register />}
+                element={<Register />}
               />
               <Route
                 path={`${process.env.PUBLIC_URL}/custompages/forgotPassword`}
-                element = {<ForgotPassword />}
+                element={<ForgotPassword />}
               />
               <Route
                 path={`${process.env.PUBLIC_URL}/custompages/lockScreen`}
-                element = {<LockScreen />}
+                element={<LockScreen />}
               />
               <Route
                 path={`${process.env.PUBLIC_URL}/custompages/errorpages/errorpage401`}
@@ -230,8 +230,8 @@ const Root = () => {
                 path={`${process.env.PUBLIC_URL}/custompages/errorpages/errorpage503`}
                 element={<Errorpage503 />}
               />
-              
-              <Route path="*" element = {<Errorpage400 />} />
+
+              <Route path="*" element={<Errorpage400 />} />
             </Route>
           </Routes>
         </React.Suspense>
